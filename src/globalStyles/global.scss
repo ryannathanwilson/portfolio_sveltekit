@@ -1,0 +1,139 @@
+@import './reset';
+
+$mobile: 600px;
+$tablet: 1000px;
+
+:root {
+  --primary-color: #0d0c1d;
+  --primary-light: #effffa;
+  --primary-hover: #343078;
+  --header: #0581a4;
+  --accent: #0581a4;
+  --accent2: #c35263;
+  --accent3: #00894e;
+  --shadow: rgb(0 0 0 / 20%);
+  --light: rgb(173 110 110 / 70%);
+  --lightest: rgb(255 255 255);
+  --middle: rgb(150 150 150);
+  --dark: rgb(70 70 70);
+  --darkest: rgb(0 0 0);
+  --xl: 10rem;
+  --l: 1.5rem;
+  --m: 1rem;
+  --s: 0.7rem;
+  --xs: 0.5rem;
+  --xxs: 0.25rem;
+}
+
+@media (max-width: $tablet) {
+  :root {
+    --xl: 2rem;
+  }
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: var(--xl);
+  font-weight: 700;
+  line-height: var(--xl);
+  letter-spacing: 1rem;
+  color: var(--accent2);
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: var(--l);
+  color: var(--dark);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: var(--s);
+  color: var(--accent);
+}
+
+p {
+  text-align: left;
+  font-size: var(-m);
+  line-height: 1.7rem;
+}
+
+pre {
+  border-radius: 0.5rem;
+}
+
+code {
+  font-size: var(--s);
+  line-height: 1.3rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+
+.wrapper {
+  max-width: $tablet;
+  padding: 0 2rem;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.section {
+  padding-top: 4rem;
+
+  @media (max-width: var(--tablet)) {
+    padding-top: 17rem;
+  }
+}
+
+.my-styled-modal-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background-color: rgb(0 0 0 / 75%);
+}
+
+.my-styled-modal {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  border: 1px solid #333;
+  background: #fff;
+  overflow: auto;
+  border-radius: 0;
+  outline: none;
+  padding: 0;
+  z-index: 100;
+  box-shadow: 0 0 4rem 2px #111;
+
+  @media (max-width: var(--mobile)) {
+    width: 90%;
+    height: 85%;
+  }
+}
+
+.react-modal-overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.react-modal-overlay--after-open {
+  opacity: 1;
+}
+
+.react-modal-overlay--before-close {
+  opacity: 0;
+}
