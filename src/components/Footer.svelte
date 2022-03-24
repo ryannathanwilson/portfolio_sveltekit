@@ -99,10 +99,6 @@
       font-size: 0.8rem;
       flex-shrink: 0;
     }
-    .icons {
-      position: relative;
-      bottom: -1px;
-    }
     #hire {
       max-width: 300px;
     }
