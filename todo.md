@@ -4,4 +4,3 @@
 - Icons
 - Error page
 - Blog routing
-- Style projects

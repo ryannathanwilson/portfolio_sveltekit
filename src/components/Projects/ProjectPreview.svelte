@@ -2,16 +2,11 @@
   import type { ProjectInterface } from 'src/types';
 
   import { openModal } from 'svelte-modals';
-  import Modal from '../Modal.svelte';
+  import Modal from './Modal.svelte';
   export let project: ProjectInterface;
 
   function handleClick() {
-    openModal(Modal, {
-      imagePreviewRectanglePath: project.imageRectangle,
-      url: project.url,
-      title: project.title,
-      description: project.description
-    });
+    openModal(Modal, { project });
   }
 </script>
 
@@ -35,11 +30,11 @@
     position: relative;
     aspect-ratio: 1;
     cursor: pointer;
-    background-color: red;
     box-shadow: 0 0 1.5rem 0 var(--shadow);
     text-align: center;
     overflow: hidden;
     border-radius: var(--radius);
+    transition: var(--transition-time) ease-in;
 
     img {
       width: 100%;
@@ -51,12 +46,12 @@
       grid-template-areas: 'top' 'bottom';
       position: absolute;
       background-color: var(--primary-light);
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      top: -2%;
+      left: -2%;
+      right: -2%;
+      bottom: -2%;
       opacity: 0;
-      transition: var(--transition-time);
+      transition: var(--transition-time) ease-in;
 
       .top,
       .bottom {
@@ -64,18 +59,20 @@
         /*left: 0;*/
         /*right: 0;*/
         /*height: 150px;*/
+        padding: var(--m);
         background-color: transparent;
         display: flex;
         flex-direction: column;
         gap: var(--xs);
         justify-content: center;
         align-items: center;
-        transition: transform var(--transition-time) ease-in;
+        opacity: 0;
+        transition: all var(--transition-time) ease-in;
       }
 
       .top {
         grid-area: 'top';
-        transform: translateY(-100%);
+        transform: translateY(10%);
         h2,
         h3 {
           display: block;
@@ -84,7 +81,7 @@
 
       .bottom {
         grid-area: 'bottom';
-        transform: translateY(100%);
+        transform: translateY(10%);
         .launch-modal {
           color: var(--accent2);
         }
@@ -92,15 +89,13 @@
     }
 
     &:hover {
+      transform: scale(1.02);
       .cover {
-        opacity: 1;
+        opacity: 0.95;
       }
-
-      .top {
-        transform: translateY(0);
-      }
-
+      .top,
       .bottom {
+        opacity: 1;
         transform: translateY(0);
       }
     }

@@ -28,6 +28,6 @@
   .lowlight {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--s);
+    gap: var(--m);
   }
 </style>
