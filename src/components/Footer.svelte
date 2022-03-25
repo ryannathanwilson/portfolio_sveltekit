@@ -93,7 +93,7 @@
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-around;
-    @media (max-width: 480px) {
+    @media (max-width: 1000px) {
       flex-direction: column;
     }
     div {
