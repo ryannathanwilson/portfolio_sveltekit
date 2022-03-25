@@ -29,9 +29,7 @@
         <textarea id="message" name="message" />
       </label>
     </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
+    <button type="submit">Send</button>
   </form>
 </div>
 
@@ -41,7 +39,7 @@
     padding: 2rem;
     width: 500px;
     @media (max-width: 480px) {
-      width: 100vw;
+      width: 100%;
       flex-direction: column;
     }
     p {
@@ -69,6 +67,8 @@
       height: 150px;
     }
     button {
+      box-sizing: border-box;
+      text-align: center;
       display: block;
       padding: 0.8rem 2em;
       font-size: 1.5em;

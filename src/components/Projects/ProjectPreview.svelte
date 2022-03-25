@@ -88,16 +88,29 @@
         }
       }
     }
-
-    &:hover {
+  }
+  @media (min-width: 1001px) {
+    .container:hover {
       transform: scale(1.02);
       .cover {
         opacity: 0.95;
+        .top,
+        .bottom {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
-      .top,
-      .bottom {
-        opacity: 1;
-        transform: translateY(0);
+    }
+  }
+  @media (max-width: 1000px) {
+    .container {
+      .cover {
+        opacity: 0.9;
+        .top,
+        .bottom {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     }
   }

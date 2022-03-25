@@ -55,7 +55,7 @@
       <div id="tech">
         <div>This website is powered by:</div>
         <div>
-          Svelte{' '}<Icon icon="file-icons:svelte" />
+          Svelte + SvelteKit{' '}<Icon icon="file-icons:svelte" />
         </div>
         <div>&#169; 2020 - {new Date().getFullYear()} Ryan N Wilson</div>
       </div>
@@ -111,7 +111,7 @@
     }
     #tech {
       width: 220px;
-      border: 1px solid var(--light);
+      border: 1px solid var(--primary-light);
       border-radius: 0.5rem;
       padding: 0.5rem 1rem;
     }

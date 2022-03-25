@@ -26,9 +26,24 @@
 </div>
 
 <style>
+  .highlight {
+    margin-bottom: var(--l);
+  }
   .lowlight {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--m);
+  }
+  @media (max-width: 1000px) {
+    .lowlight {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 500px) {
+    .lowlight {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
   }
 </style>

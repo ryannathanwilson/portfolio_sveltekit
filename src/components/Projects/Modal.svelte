@@ -52,7 +52,7 @@
     overflow: auto;
     outline: none;
     padding: 0;
-    z-index: 100;
+    z-index: 10;
     box-shadow: 0 0 4rem 2px var(--shadow);
     @media (max-width: 480px) {
       width: 90%;
@@ -64,7 +64,7 @@
     position: absolute;
     height: 2rem;
     width: 5.5rem;
-    z-index: 100;
+    z-index: 10;
     background-color: var(--lightest);
     top: 0.3rem;
     right: 0.3rem;

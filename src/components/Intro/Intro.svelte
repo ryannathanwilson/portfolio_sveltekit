@@ -42,4 +42,9 @@
       padding-left: 1rem;
     }
   }
+  @media (max-width: 600px) {
+    .section {
+      display: block;
+    }
+  }
 </style>

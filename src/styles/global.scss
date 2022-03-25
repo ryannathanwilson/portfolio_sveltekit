@@ -30,20 +30,13 @@ $desktop: 1300px;
   --xxs: 0.25rem;
 }
 
-@media (max-width: $tablet) {
-  :root {
-    --xl: 2rem;
-  }
-}
-
-html {
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 300;
   scroll-behavior: smooth;
-}
-
-body {
-  width: 100vw;
 }
 
 h1 {
@@ -71,8 +64,7 @@ h3 {
 
 p {
   text-align: left;
-  font-size: var(-m);
-  line-height: 1.7rem;
+  font-size: var(--m);
 }
 
 pre {
@@ -106,48 +98,12 @@ svg {
   }
 }
 
-.my-styled-modal-overlay {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 20;
-  background-color: rgb(0 0 0 / 75%);
-}
-
-.my-styled-modal {
-  position: relative;
-  width: 600px;
-  height: 600px;
-  margin: auto;
-  border: 1px solid #333;
-  background: #fff;
-  overflow: auto;
-  border-radius: 0;
-  outline: none;
-  padding: 0;
-  z-index: 100;
-  box-shadow: 0 0 4rem 2px #111;
-
-  @media (max-width: var(--mobile)) {
-    width: 90%;
-    height: 85%;
+@media (max-width: $tablet) {
+  :root {
+    --xl: 4rem;
   }
-}
 
-.react-modal-overlay {
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
-
-.react-modal-overlay--after-open {
-  opacity: 1;
-}
-
-.react-modal-overlay--before-close {
-  opacity: 0;
+  h1 {
+    letter-spacing: var(--xs);
+  }
 }
