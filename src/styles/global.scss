@@ -39,6 +39,7 @@ $desktop: 1300px;
 html {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 300;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,12 +47,14 @@ body {
 }
 
 h1 {
+  text-align: center;
   text-transform: uppercase;
   font-size: var(--xl);
   font-weight: 700;
   line-height: var(--xl);
   letter-spacing: 1rem;
   color: var(--accent2);
+  margin: auto;
 }
 
 h2 {
@@ -81,6 +84,10 @@ code {
   line-height: 1.3rem;
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
+}
+
+svg {
+  transform: scale(1.1) translateY(10%);
 }
 
 .wrapper {

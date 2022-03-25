@@ -32,7 +32,7 @@
       grid-area: 'left';
       p {
         position: relative;
-        margin: 2rem 4rem;
+        margin: 3rem 6rem;
       }
       p::before {
         content: open-quote;

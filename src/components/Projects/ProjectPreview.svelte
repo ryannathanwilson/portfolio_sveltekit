@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { ProjectInterface } from 'src/types';
 
+  import Icon from '@iconify/svelte';
   import { openModal } from 'svelte-modals';
   import Modal from './Modal.svelte';
   export let project: ProjectInterface;
@@ -20,7 +21,7 @@
     </div>
 
     <div class="bottom">
-      <div class="launch-modal">Learn More</div>
+      <div class="launch-modal">Learn More <Icon icon="akar-icons:link-out" /></div>
     </div>
   </div>
 </div>

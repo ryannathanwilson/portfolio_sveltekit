@@ -1,3 +1,7 @@
+<script>
+  import Icon from '@iconify/svelte';
+</script>
+
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class="mountains"
@@ -23,13 +27,17 @@
         <h3>Contact</h3>
       </div>
       <div>
-        <a href="www.linkedin.com/in/rnw" target="_blank" rel="noreferrer"> LinkedIn </a>
+        <a href="www.linkedin.com/in/rnw" target="_blank" rel="noreferrer"
+          ><Icon icon="akar-icons:linkedin-box-fill" /> LinkedIn
+        </a>
       </div>
       <div>
-        <a href="https://github.com/ryannathanwilson" target="_blank" rel="noreferrer"> Github </a>
+        <a href="https://github.com/ryannathanwilson" target="_blank" rel="noreferrer"
+          ><Icon icon="akar-icons:github-fill" /> Github
+        </a>
       </div>
       <div>
-        <a href="/">ryannathanwilson.com </a>
+        <a href="/"><Icon icon="ic:baseline-web-asset" /> ryannathanwilson.com </a>
       </div>
     </div>
     <div class="column">
@@ -47,7 +55,7 @@
       <div id="tech">
         <div>This website is powered by:</div>
         <div>
-          Svelte{' '}
+          Svelte{' '}<Icon icon="file-icons:svelte" />
         </div>
         <div>&#169; 2020 - {new Date().getFullYear()} Ryan N Wilson</div>
       </div>
@@ -69,7 +77,6 @@
   }
   .content {
     position: relative;
-    display: block;
     width: 100%;
     background: var(--dark);
     margin: 0;

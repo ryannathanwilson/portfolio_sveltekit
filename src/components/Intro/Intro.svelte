@@ -18,21 +18,28 @@
   </div>
 </div>
 
-<style>
+<style lang="scss">
   .section {
-    display: flex;
-    align-items: center;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'left right';
+    margin: auto;
   }
   .image {
-    max-width: 400px;
-    aspect-ratio: 0.75;
+    grid-area: 'left';
     overflow: hidden;
   }
   img {
     width: 100%;
   }
   .intro-text {
-    border-left: 2px solid var(--accent2);
-    padding-left: 1rem;
+    grid-area: 'right';
+    display: flex;
+    align-items: center;
+    p {
+      border-left: 2px solid var(--accent2);
+      padding-left: 1rem;
+    }
   }
 </style>

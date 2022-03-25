@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { ProjectInterface } from 'src/types';
+  import Icon from '@iconify/svelte';
 
   import { closeModal } from 'svelte-modals';
 
@@ -19,7 +20,9 @@
       <img src={project.imageRectangle} alt={project.title} />
       <div class="description">
         <div>{project.description}</div>
-        <a href={project.url} target="_blank" rel="noreferrer" class="launchURL"> View Website </a>
+        <a href={project.url} target="_blank" rel="noreferrer" class="launchURL">
+          View Website <Icon icon="akar-icons:link-out" /></a
+        >
       </div>
     </div>
   </div>
