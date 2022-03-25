@@ -23,4 +23,6 @@
 			]
 		}
 	},
+	"resolveJsonModule": true,
+	"esModuleInterop": true,
 }

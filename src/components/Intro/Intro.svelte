@@ -8,7 +8,7 @@
   </div>
   <div class="intro-text">
     <p>
-      "I am a front end web developer with a technical background in Mechanical Engineering and
+      "I am a full stack web developer with a technical background in Mechanical Engineering and
       Industrial Design. I've always loved working at the intersection of form and function;
       products that have to work well and be beautiful at the same time. Now I am bringing that same
       skillset into web development." <br /><br />- Ryan

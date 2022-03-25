@@ -1,25 +1,33 @@
 <script lang="ts">
   import ProjectPreview from './ProjectPreview.svelte';
-  import projects from '../../../static/projects.json';
+  import Highlight from './Highlight.svelte';
+  import projectsJSON from '$static/projects.json';
+  import type { ProjectInterface } from 'src/types';
+  const projects = projectsJSON as ProjectInterface[];
 </script>
 
 <div id="projects" class="section">
   <h1>Projects</h1>
-  {#each projects as project}
-    <div>
-      <ProjectPreview
-        imagePreviewPath={project.imageSquare}
-        imagePreviewRectanglePath={project.imageRectangle}
-        title={project.title}
-        tag={project.tags}
-        url={project.url}
-        description={project.description}
-      />
-    </div>
-  {/each}
-  <div>highlight 2</div>
-  <div>low focus</div>
-  <div>low focus</div>
-  <div>low focus</div>
-  <div>low focus</div>
+  <div class="highlight">
+    {#each projects as project}
+      {#if project.display && project.highlight}
+        <Highlight {project} />
+      {/if}
+    {/each}
+  </div>
+  <div class="lowlight">
+    {#each projects as project}
+      {#if project.display && !project.highlight}
+        <ProjectPreview {project} />
+      {/if}
+    {/each}
+  </div>
 </div>
+
+<style>
+  .lowlight {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--s);
+  }
+</style>

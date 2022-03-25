@@ -1,96 +1,108 @@
 <script lang="ts">
+  import type { ProjectInterface } from 'src/types';
+
   import { openModal } from 'svelte-modals';
   import Modal from '../Modal.svelte';
-
-  export let imagePreviewPath: string;
-  export let imagePreviewRectanglePath: string;
-  export let title: string;
-  export let tag: string;
-  export let url: string;
-  export let description: string;
+  export let project: ProjectInterface;
 
   function handleClick() {
     openModal(Modal, {
-      imagePreviewRectanglePath: imagePreviewRectanglePath,
-      url: url,
-      title: title,
-      description: description
+      imagePreviewRectanglePath: project.imageRectangle,
+      url: project.url,
+      title: project.title,
+      description: project.description
     });
   }
 </script>
 
-<button on:click={handleClick}>
-  <img src={imagePreviewPath} alt={title} />
-  <div class="cover" />
-  <div class="top">
-    <h2>{title}</h2>
-    <h3>{tag}</h3>
+<div class="container" role="button" on:click={handleClick}>
+  <img src={project.imageSquare} alt={project.title} />
+
+  <div class="cover">
+    <div class="top">
+      <h2>{project.title}</h2>
+      <h3>{project.tags}</h3>
+    </div>
+
+    <div class="bottom">
+      <div class="launch-modal">Learn More</div>
+    </div>
   </div>
-  <div class="bottom"><div class="launch-modal">Learn More</div></div>
-</button>
+</div>
 
 <style lang="scss">
-  button {
-    display: block;
+  .container {
     position: relative;
-    cursor: pointer;
-    height: 300px;
     aspect-ratio: 1;
+    cursor: pointer;
     background-color: red;
     box-shadow: 0 0 1.5rem 0 var(--shadow);
     text-align: center;
     overflow: hidden;
     border-radius: var(--radius);
-  }
-  img {
-    width: 300px;
-  }
-  .cover {
-    position: absolute;
-    background-color: var(--primary-light);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: var(--transition-time);
-  }
-  .top,
-  .bottom {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 150px;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: var(--xs);
-    justify-content: center;
-    align-items: center;
-    transition: transform var(--transition-time) ease-in;
-  }
-  .top {
-    top: -150px;
-    h2,
-    h3 {
-      display: block;
+
+    img {
+      width: 100%;
     }
-  }
-  .bottom {
-    bottom: -150px;
-    .launch-modal {
-      color: var(--accent2);
-    }
-  }
-  button:hover {
+
     .cover {
-      opacity: 1;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 'top' 'bottom';
+      position: absolute;
+      background-color: var(--primary-light);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: var(--transition-time);
+
+      .top,
+      .bottom {
+        /*position: absolute;*/
+        /*left: 0;*/
+        /*right: 0;*/
+        /*height: 150px;*/
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: var(--xs);
+        justify-content: center;
+        align-items: center;
+        transition: transform var(--transition-time) ease-in;
+      }
+
+      .top {
+        grid-area: 'top';
+        transform: translateY(-100%);
+        h2,
+        h3 {
+          display: block;
+        }
+      }
+
+      .bottom {
+        grid-area: 'bottom';
+        transform: translateY(100%);
+        .launch-modal {
+          color: var(--accent2);
+        }
+      }
     }
-    .top {
-      transform: translateY(150px);
-    }
-    .bottom {
-      transform: translateY(-150px);
+
+    &:hover {
+      .cover {
+        opacity: 1;
+      }
+
+      .top {
+        transform: translateY(0);
+      }
+
+      .bottom {
+        transform: translateY(0);
+      }
     }
   }
 </style>

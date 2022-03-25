@@ -2,6 +2,7 @@
 
 $mobile: 600px;
 $tablet: 1000px;
+$desktop: 1300px;
 
 :root {
   --primary-color: #0d0c1d;
@@ -80,7 +81,7 @@ code {
 }
 
 .wrapper {
-  max-width: $tablet;
+  max-width: $desktop;
   padding: 0 2rem;
   margin: auto;
   overflow-x: hidden;
@@ -88,6 +89,7 @@ code {
 
 .section {
   padding-top: 4rem;
+  margin-bottom: 10rem;
 
   @media (max-width: var(--tablet)) {
     padding-top: 17rem;
