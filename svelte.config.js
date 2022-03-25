@@ -22,7 +22,9 @@ const config = {
 			resolve: {
 				alias: {
 					$components: resolve('./src/components'),
-					$static: resolve('./static')
+					$static: resolve('./static'),
+					$images: resolve('./static/images'),
+					$fonts: resolve('./static/fonts')
 				}
 			}
 		}

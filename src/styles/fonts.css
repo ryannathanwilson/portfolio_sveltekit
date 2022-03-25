@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Roboto Mono';
   src:
-    url('/static/RobotoMono-Regular.woff2') format('woff2'),
-    url('/static/RobotoMono-Regular.woff') format('woff');
+    url('$fonts/RobotoMono-Regular.woff2') format('woff2'),
+    url('$fonts/RobotoMono-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 @font-face {
   font-family: 'Open Sans';
   src:
-    url('/static/OpenSans-Light.woff2') format('woff2'),
-    url('/static/OpenSans-Light.woff') format('woff');
+    url('$fonts/OpenSans-Light.woff2') format('woff2'),
+    url('$fonts/OpenSans-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -21,8 +21,8 @@
 @font-face {
   font-family: 'Open Sans';
   src:
-    url('/static/OpenSans-Bold.woff2') format('woff2'),
-    url('/static/OpenSans-Bold.woff') format('woff');
+    url('$fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('$fonts/OpenSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;

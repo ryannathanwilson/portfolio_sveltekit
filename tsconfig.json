@@ -13,7 +13,13 @@
 				"src/components/*"
 			],
 			"$static/*": [
-				"static/*"
+				"src/static/*"
+			],
+			"$images/*": [
+				"src/static/images/*"
+			],
+			"$fonts/*": [
+				"src/static/fonts/*"
 			]
 		}
 	},

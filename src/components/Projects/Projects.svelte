@@ -1,9 +1,10 @@
 <script lang="ts">
   import ProjectPreview from './ProjectPreview.svelte';
   import Highlight from './Highlight.svelte';
-  import projectsJSON from '$static/projects.json';
+  import projectsJSON from './projects.json';
   import type { ProjectInterface } from 'src/types';
-  const projects = projectsJSON as ProjectInterface[];
+
+  let projects = projectsJSON as ProjectInterface[];
 </script>
 
 <div id="projects" class="section">

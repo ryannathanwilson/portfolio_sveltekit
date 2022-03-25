@@ -1,5 +1,5 @@
 <script>
-  import logo from '$static/profile_BW.jpeg';
+  import logo from '$images/profile_BW.jpeg';
 </script>
 
 <div id="intro" class="section">
