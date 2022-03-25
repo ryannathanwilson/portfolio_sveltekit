@@ -1,10 +1,12 @@
 <script>
-  import logo from '$images/profile_BW.jpeg';
 </script>
 
 <div id="intro" class="section">
   <div class="image">
-    <img src={logo} alt="B/W profile of Ryan Nathan Wilson" />
+    <img
+      src="https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/profile_BW.webp"
+      alt="B/W profile of Ryan Nathan Wilson"
+    />
   </div>
   <div class="intro-text">
     <p>
