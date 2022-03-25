@@ -27,12 +27,12 @@
         <h3>Contact</h3>
       </div>
       <div>
-        <a href="www.linkedin.com/in/rnw" target="_blank" rel="noreferrer"
+        <a href="https://www.linkedin.com/in/rnw" target="_blank" rel="external"
           ><Icon icon="akar-icons:linkedin-box-fill" /> LinkedIn
         </a>
       </div>
       <div>
-        <a href="https://github.com/ryannathanwilson" target="_blank" rel="noreferrer"
+        <a href="https://github.com/ryannathanwilson" target="_blank" rel="external"
           ><Icon icon="akar-icons:github-fill" /> Github
         </a>
       </div>

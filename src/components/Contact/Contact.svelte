@@ -1,12 +1,6 @@
 <div id="contact" class="section">
   <h1>Contact</h1>
-  <form
-    name="contact"
-    method="post"
-    action="/thankyou/"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-  >
+  <form name="contact" method="post" action="/thankyou/" data-netlify="true">
     <input type="hidden" name="form-name" value="contact" />
     <p hidden>
       <label for="bot">

@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 import { resolve } from 'path';
 import { mdsvex } from 'mdsvex'
@@ -17,6 +17,9 @@ const config = {
 		})],
 	extensions: ['.svelte', '.md'],
 	kit: {
+		prerender: {
+			default: true
+		},
 		adapter: adapter(),
 		vite: {
 			resolve: {

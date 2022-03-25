@@ -8,7 +8,6 @@ specifiers:
   '@sveltejs/kit': next
   '@typescript-eslint/eslint-plugin': ^5.10.1
   '@typescript-eslint/parser': ^5.10.1
-  bell-fill: link:@iconify-icons/bi/bell-fill
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.1
@@ -45,7 +44,6 @@ devDependencies:
   '@sveltejs/kit': 1.0.0-next.303_sass@1.49.9+svelte@3.46.4
   '@typescript-eslint/eslint-plugin': 5.15.0_5400bdff049a1444f15d03ace6195cd2
   '@typescript-eslint/parser': 5.15.0_eslint@7.32.0+typescript@4.6.2
-  bell-fill: link:@iconify-icons/bi/bell-fill
   eslint: 7.32.0
   eslint-config-prettier: 8.5.0_eslint@7.32.0
   eslint-plugin-svelte3: 3.4.1_eslint@7.32.0+svelte@3.46.4
