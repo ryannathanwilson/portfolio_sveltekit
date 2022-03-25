@@ -47,7 +47,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@iconify-icons/bi": "^1.2.2",
     "svelte-modals": "^1.1.0"
   }
 }

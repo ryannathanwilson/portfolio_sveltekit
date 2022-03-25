@@ -1,7 +1,6 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify-icons/bi': ^1.2.2
   '@iconify/svelte': ^2.2.0
   '@sveltejs/adapter-auto': next
   '@sveltejs/adapter-netlify': ^1.0.0-next.51
@@ -36,7 +35,6 @@ specifiers:
   typescript: ~4.6.2
 
 dependencies:
-  '@iconify-icons/bi': 1.2.2
   svelte-modals: 1.1.0
 
 devDependencies:
@@ -130,19 +128,9 @@ packages:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: true
 
-  /@iconify-icons/bi/1.2.2:
-    resolution: {integrity: sha512-JP70DccGbxXUaiuYUSnrWtLDe4n5Og6Yjm1bnEFQIhkb1lCXw1Ie7/x+1POFPt39it5JMdE1xv2xR+U+hC3s2A==}
-    dependencies:
-      '@iconify/types': 1.1.0
-    dev: false
-
   /@iconify/svelte/2.2.0:
     resolution: {integrity: sha512-Zs+WBMVKhbUOA+w7LX1zjQGs4EvGF9alwKxr3e8j1ZoUqCwWDLGrZTypeCXiMxfGYYRgE6jrJ3wnIkk0Mpa9/A==}
     dev: true
-
-  /@iconify/types/1.1.0:
-    resolution: {integrity: sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==}
-    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}

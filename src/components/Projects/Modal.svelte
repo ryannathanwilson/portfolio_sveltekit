@@ -134,10 +134,6 @@
     margin: 1rem auto;
     text-align: center;
     transition: background-color 200ms ease;
-    svg {
-      position: relative;
-      bottom: -3px;
-    }
     &:hover {
       background-color: var(--accent2);
       color: var(--lightest);
