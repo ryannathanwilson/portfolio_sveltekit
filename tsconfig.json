@@ -12,12 +12,6 @@
 			"$components/*": [
 				"src/components/*"
 			],
-			"$stores/*": [
-				"src/stores/*"
-			],
-			"$actions/*": [
-				"src/actions/*"
-			],
 			"$static/*": [
 				"static/*"
 			]
