@@ -4,6 +4,10 @@
 
   import { closeModal } from 'svelte-modals';
 
+  const handleClose = () => {
+    document.documentElement.style.overflow = 'scroll';
+    closeModal();
+  };
   /*https://svelte-modals.mattjennings.io/*/
   // provided by <Modals />
   export let isOpen;
@@ -13,7 +17,7 @@
 {#if isOpen}
   <div role="dialog" class="modal">
     <div class="contents">
-      <div class="close-project" role="button" tabindex="0" on:click={closeModal}>
+      <div class="close-project" role="button" tabindex="0" on:click={handleClose}>
         CLOSE{' '}
       </div>
 
@@ -55,8 +59,13 @@
     z-index: 10;
     box-shadow: 0 0 4rem 2px var(--shadow);
     @media (max-width: 480px) {
-      width: 90%;
-      height: 80%;
+      position: absolute;
+      top: 5rem;
+      left: 1rem;
+      right: 1rem;
+      bottom: 3rem;
+      width: auto;
+      height: auto;
     }
   }
 

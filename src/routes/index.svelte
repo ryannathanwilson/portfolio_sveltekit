@@ -3,6 +3,10 @@
   import Projects from '../components/Projects';
   import Contact from '../components/Contact';
   import { Modals, closeModal } from 'svelte-modals';
+  const handleClose = () => {
+    document.documentElement.style.overflow = 'scroll';
+    closeModal();
+  };
 </script>
 
 <Intro />
@@ -10,7 +14,7 @@
 <Contact />
 
 <Modals>
-  <div slot="backdrop" class="backdrop" on:click={closeModal} />
+  <div slot="backdrop" class="backdrop" on:click={handleClose} />
 </Modals>
 
 <style>

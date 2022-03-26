@@ -1,9 +1,7 @@
 <script lang="ts">
   import Burger from './Burger.svelte';
-  let isOpen: boolean = false;
-  const toggleMenu = () => {
-    isOpen = !isOpen;
-  };
+  export let isOpen: boolean = false;
+  export let toggleMenu: () => void;
 </script>
 
 <div class="header">
@@ -70,7 +68,7 @@
     }
     .open {
       .nav-links {
-        transform: translateY(64px);
+        transform: translateY(4rem);
         .links {
           opacity: 1;
         }

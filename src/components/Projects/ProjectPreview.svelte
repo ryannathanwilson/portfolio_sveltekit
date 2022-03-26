@@ -8,6 +8,8 @@
 
   function handleClick() {
     openModal(Modal, { project });
+    document.documentElement.style.overflow = 'hidden';
+    console.log('test');
   }
 </script>
 
