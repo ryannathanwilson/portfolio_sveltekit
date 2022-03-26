@@ -26,7 +26,9 @@
             {post.meta.title}
           </a>
         </h2>
-        {post.meta.date} by {author}
+        <h4>
+          {post.meta.date} by {author}
+        </h4>
         <div class="description">
           {post.meta.description}
         </div>
@@ -44,6 +46,9 @@
     text-align: left;
     margin-bottom: var(--l);
   }
+  h4 {
+    color: var(--accent);
+  }
   li {
     margin-bottom: var(--l);
     /*border-bottom: 2px solid var(--accent);*/
@@ -51,5 +56,6 @@
   }
   .description {
     max-width: 40rem;
+    color: var(--middle);
   }
 </style>
