@@ -2,14 +2,15 @@
 title: PYTHONIC CODE SNIPPETS - TECHNICAL INTERVIEW REFERENCE
 date: "2021-09-15"
 author: Ryan N Wilson
-description: Lorem ipsum alsdkfjal;sdjf asdlfja;sdalksd;fj
+description: "As I practice solving problems on LeetCode.com I wanted to keep track of pieces of syntax I find to be useful that let Python shine:
+Lists are great for stacks. For queues use deques..."
 categories:
-    - python
-    - coding problems
+    - Python
+    - Coding problems
 ---
 As I practice solving problems on LeetCode.com I wanted to keep track of pieces of syntax I find to be useful that let Python shine:
 
-LISTS
+## LISTS
 
 Lists are great for stacks. For queues use deques.
 
@@ -74,7 +75,7 @@ myQueue.pop()
 
 ## TUPLES
 
--Coming Soon
+- Coming Soon
 
 ## SETS
 

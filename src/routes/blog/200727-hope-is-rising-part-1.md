@@ -1,14 +1,13 @@
 ---
 title: Hope is rising - Introduction
 date: "2020-07-27"
-description: Lorem ipsum alsdkfjal;sdjf asdlfja;sdalksd;fj
+description: "Good day to you, and welcome to my website!
+
+A little bit about myself. I've loved making things for as long as I can remember. As little kid I lived for legos. I built bow and arrows with sticks and rubber bands. I tried to design a motorized airplane when I was reading about the Wright brothers as a..."
 categories:
-    - numbers
-    - things
+    - Freelance
 ---
-HOPE IS RISING
-INTRODUCTION
-RYAN N WILSON | 27 JULY 2020
+
 Good day to you, and welcome to my website!
 
 A little bit about myself. I've loved making things for as long as I can remember. As little kid I lived for legos. I built bow and arrows with sticks and rubber bands. I tried to design a motorized airplane when I was reading about the Wright brothers as a third grader (and failed miserably because I didn't understand that motors have limited power, amongst other things I hadn't figured out about the world). Late elementary school I was going to be a rocket scientest. In middle school poked around in JavaScript and decided to be a computer scientist, a dream quickly replaced by being a performance footwear designer for PUMA. I studied Mechanical Engineering and Industrial Design at R.I.T to design all the coolest consumer products (including an internship in footwear devepment at PUMA in Germany). Out of school I moved to Boston to design and build custom titanium bicycles for Seven Cycles.
