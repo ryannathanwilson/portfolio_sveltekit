@@ -1,7 +1,7 @@
 <script lang="ts">
   import '$styles/global.scss';
-  import Header from '$components/layout/Header.svelte';
-  import Footer from '$components/layout/Footer.svelte';
+  import Header from '$components/layouts/Header.svelte';
+  import Footer from '$components/layouts/Footer.svelte';
 </script>
 
 <Header />
