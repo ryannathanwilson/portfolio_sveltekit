@@ -56,7 +56,7 @@
     box-shadow: 0 0 4rem 2px var(--shadow);
     @media (max-width: 480px) {
       width: 90%;
-      height: 85%;
+      height: 80%;
     }
   }
 

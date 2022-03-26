@@ -36,6 +36,7 @@
 <style lang="scss">
   .info {
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
     margin-bottom: var(--l);
   }
