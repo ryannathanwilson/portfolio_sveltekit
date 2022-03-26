@@ -12,6 +12,9 @@
 			"$components/*": [
 				"src/components/*"
 			],
+			"$styles/*": [
+				"src/styles/*"
+			],
 			"$static/*": [
 				"src/static/*"
 			],

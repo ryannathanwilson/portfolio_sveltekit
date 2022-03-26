@@ -12,7 +12,7 @@ const config = {
 		mdsvex({
 			extensions: ['.md'],
 			layout: {
-				blog: 'src/routes/blog/_layout.svelte'
+				blog: 'src/routes/blog/_blogLayout.svelte'
 			}
 		})],
 	extensions: ['.svelte', '.md'],
@@ -25,6 +25,7 @@ const config = {
 			resolve: {
 				alias: {
 					$components: resolve('./src/components'),
+					$styles: resolve('./src/styles'),
 					$static: resolve('./static'),
 					$images: resolve('./static/images'),
 					$fonts: resolve('./static/fonts')
