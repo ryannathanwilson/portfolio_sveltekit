@@ -1,22 +1,19 @@
 ---
 title: PYTHONIC CODE SNIPPETS - TECHNICAL INTERVIEW REFERENCE
 date: "2021-09-15"
+author: Ryan N Wilson
 description: Lorem ipsum alsdkfjal;sdjf asdlfja;sdalksd;fj
 categories:
-    - numbers
-    - things
+    - python
+    - coding problems
 ---
-RyanNathan
-PROJECTS
-BLOG
-CONTACT
-PYTHONIC CODE SNIPPETS - TECHNICAL INTERVIEW REFERENCE
-RYAN N WILSON |
 As I practice solving problems on LeetCode.com I wanted to keep track of pieces of syntax I find to be useful that let Python shine:
 
 LISTS
 
 Lists are great for stacks. For queues use deques.
+
+```python
 # Initialize a list object:
 myList = []
 
@@ -69,26 +66,29 @@ myQueue.popleft()
 
 # Remove from right
 myQueue.pop()
-DICTIONARIES
+```
 
-Coming soon
+## DICTIONARIES
 
-TUPLES
+- Coming soon
 
-Coming Soon
+## TUPLES
 
-SETS
+-Coming Soon
 
-Coming Soon
+## SETS
 
-STRING MANIPULATION
+- Coming Soon
 
-Coming Soon
+## STRING MANIPULATION
 
-ITERATING
+- Coming Soon
+
+## ITERATING
 
 Many coding problems involve searching through data structures. Here are a few approaches:
 
+```python
 # iterate over characters in a string:
 for char in string:
   
@@ -116,3 +116,4 @@ substring = string[i:j]
 # avoid calling values that are out of range
 pointer = item[i] if i > 0 else None
 For more complete reference material see the python docs.
+```
