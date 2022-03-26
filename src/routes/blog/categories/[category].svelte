@@ -1,15 +1,11 @@
 <script context="module" lang="ts">
   export const load = async ({ params, fetch }) => {
-    console.log(params.category);
     const currentCategory = params.category;
     const response = await fetch('/api/posts.json');
     const allPosts = await response.json();
-    console.log(allPosts);
 
     const matchingPosts = allPosts.filter((post) => {
       if (post.meta.categories && post.meta.categories.length !== 0) {
-        console.log(post.meta.categories[0]);
-
         return post.meta.categories.includes(currentCategory);
       } else {
         return false;
