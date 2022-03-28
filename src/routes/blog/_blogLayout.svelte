@@ -58,7 +58,7 @@
   }
   .post-wrapper {
     margin: auto;
-    max-width: 40rem;
+    max-width: 50rem;
   }
   .wrapper {
     padding: 8rem 0;

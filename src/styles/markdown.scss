@@ -1,8 +1,8 @@
 :root {
-  --size1: 2.8rem;
-  --size2: 2.2rem;
-  --size3: 1.8rem;
-  --size4: 1.4rem;
+  --size1: 3rem;
+  --size2: 1.5rem;
+  --size3: 1.5rem;
+  --size4: 1.5rem;
   --size5: 1.2rem;
   --size6: 0.9rem;
   --small: 0.7rem;
@@ -11,7 +11,15 @@
 .post-wrapper {
   a,
   a:visited {
+    position: relative;
     color: var(--accent);
+  }
+
+  p > code {
+    font-size: var(--m);
+    background-color: var(--code);
+    padding: 0 3px;
+    border-radius: 8px;
   }
 
   a:hover,
@@ -19,6 +27,22 @@
   a:active {
     color: var(--accent);
   }
+  a::after {
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			background-color: var(--accent);
+			left: 0;
+			bottom: -2px;
+			transform: scaleX(0);
+			transform-origin: right;
+			transition: transform var(--transition-time);
+		}
+		a:hover::after {
+			transform: scaleX(1);
+			transform-origin: left;
+		}
 
   p {
     font-size: var(--m);

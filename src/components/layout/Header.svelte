@@ -23,7 +23,7 @@
     width: 100%;
     background-color: var(--header);
     color: var(--primary-light);
-    z-index: 1000;
+    z-index: 100;
   }
   nav {
     display: flex;

@@ -42,6 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 150;
 
     /* allow click-through to backdrop */
     pointer-events: none;
@@ -51,6 +52,7 @@
     position: relative;
     width: 600px;
     height: 600px;
+    max-height: 90vh;
     margin: auto;
     background: #fff;
     overflow: auto;
@@ -116,6 +118,7 @@
 
   img {
     width: 100%;
+    
   }
 
   .description {
@@ -124,7 +127,6 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 300px;
     div {
       display: block;
       height: 120px;
