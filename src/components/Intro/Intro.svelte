@@ -9,7 +9,6 @@
     />
   </div>
   <div class="intro-text">
-    <h1>Ryan Wilson Portfolio</h1>
     <p>
       "I am a full stack web developer with a technical background in Mechanical Engineering and
       Industrial Design. I've always loved working at the intersection of form and function;
@@ -36,20 +35,8 @@
   }
   .intro-text {
     grid-area: 'right';
-    flex-direction: column;
     display: flex;
     align-items: center;
-
-    h1 {
-      border: 0;
-      clip: rect(1px, 1px, 1px, 1px);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
     p {
       border-left: 2px solid var(--accent2);
       padding-left: 1rem;
