@@ -1,12 +1,18 @@
 const website = {
     datePublished: new Date(20200510),
     lastUpdated: new Date(),
-    image: "https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/profile_BW.webp",
-    squareImage: "https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/profile_BW.webp",
+    image: {
+        alt: 'Ryan Wilson cheesing',
+        url: "https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/profile_BW.webp",
+    },
+    squareImage: {
+        alt: 'Ryan Wilson cheesing',
+        url: "https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/profile_BW.webp",
+    },
     author: 'Ryan N Wilson',
-    ogLanguage: 'en_US',
+    ogLanguage: 'en',
     url: 'https://ryannathanwilson.com',
-    siteLanguage: 'en-US',
+    siteLanguage: 'en',
     siteTitle: "Ryan N Wilson's Developer Portfolio",
     title: 'Home',
     siteShortTitle: 'RyanNathan Porfolio',
