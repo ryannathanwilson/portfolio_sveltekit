@@ -7,6 +7,7 @@
     metadescription,
     title,
     siteLanguage,
+    siteShortTitle,
     siteTitle,
     datePublished,
     lastUpdated,
@@ -16,7 +17,7 @@
     url
   } = metadata;
 
-  const pageTitle = `${siteTitle} ${VERTICAL_LINE_ENTITY} ${title}`;
+  const pageTitle = `${siteShortTitle} ${VERTICAL_LINE_ENTITY} ${title}`;
   const openGraphProps = {
     datePublished,
     lastUpdated,
