@@ -1,7 +1,7 @@
 ---
 title: SvelteKit Portfolio
 date: "2022-03-28"
-description: "I learned my first bit of CSS at a one night free class offered by General Assembly here in Boston. After that a bit more through The Odin Project, and after that just through doing my own projects, tinkering away trying to get things to look the way they should look. I never really stepped back to learn bigger picture strategies for..."
+description: "My first portfolio website was 3 simple files. index.html, styles.css, and script.js. I felt like I had a sufficient grasp of those underlying languages and was ready and eager to step into the frameworks that tech twitter is always going on about. Gatsby JS was basically a way to get up and running trying out React for the first time, while also taking advantage of the blazing speed and easy SEO offered..."
 categories:
     - Sveltekit
     - TypeScript
