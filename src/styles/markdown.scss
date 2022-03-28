@@ -27,22 +27,24 @@
   a:active {
     color: var(--accent);
   }
+
   a::after {
-			content: "";
-			position: absolute;
-			height: 1px;
-			width: 100%;
-			background-color: var(--accent);
-			left: 0;
-			bottom: -2px;
-			transform: scaleX(0);
-			transform-origin: right;
-			transition: transform var(--transition-time);
-		}
-		a:hover::after {
-			transform: scaleX(1);
-			transform-origin: left;
-		}
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--accent);
+    left: 0;
+    bottom: -2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--transition-time);
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 
   p {
     font-size: var(--m);
@@ -52,6 +54,11 @@
   li {
     margin-left: 1rem;
     list-style-type: disc;
+  }
+
+  ul,
+  ol {
+    margin-bottom: var(--m);
   }
 
   h1,

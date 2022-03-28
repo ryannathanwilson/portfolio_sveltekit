@@ -15,7 +15,7 @@ My [first portfolio website](https://r-n-w.github.io/) was 3 simple files. `inde
 
 - React based with all of the react eco-system.
 - Image API that resizes all images appropriately, and even sends a super low resolution version for the original page load to speed everything up.
-- SEO plugin that makes it easy to handle all the special tags one needs to make it easy for google to hanlde your site.
+- SEO plugin that makes it easy to handle all the special tags one needs to make it easy for google to handle your site.
 
 The catch is that I built it in 2020 on Gatsby 2.0. Also to deal with any data, like an image, or json, or blog posts from a CMS, requires graphql syntax that just felt way overkill to get right. While I'm very interesting in learning to use graphql to talk to an elaborate backend, I don't want to use it to load an image that's stored in the next directory over...
 
