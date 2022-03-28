@@ -51,7 +51,7 @@ You can build your project for any host you want. I'm running mine on netlify, a
 
 ### Vite
 
-Builds and local server are both so fast! Vite put a lot of work into bundling your code in a way that makes it easy to rebundle whenever you make changes. They don't have to rebundle all your dependencies every time you restart your project. I'm developing on one display. So when I save my changes and switch over to the browser, it's always ready.
+Builds and local server are both so fast! Vite put a lot of work into bundling your code in a way that makes it easy to rebundle whenever you make changes. They don't have to rebundle all your dependencies every time you restart your project. I'm developing on one display. So when I save my changes and switch over to the browser, it's always ready. Oh! and did I mention build time for my app on Netlify ***are 6x faster?*** I'm down from 3 minutes to 30 seconds.
 
 ### Frontend + Backend
 
