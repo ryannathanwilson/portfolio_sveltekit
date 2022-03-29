@@ -9,8 +9,7 @@ $desktop: 1300px;
   --primary-color: #0d0c1d;
   --primary-light: #effffa;
   --primary-hover: #343078;
-  --header: #0581a4;
-  --accent: #0581a4;
+  --accent: #045b73;
   --accent2: #c35263;
   --accent3: #00894e;
   --shadow: rgb(0 0 0 / 20%);
@@ -58,7 +57,7 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  font-size: var(--s);
+  font-size: var(--m);
   color: var(--accent);
 }
 

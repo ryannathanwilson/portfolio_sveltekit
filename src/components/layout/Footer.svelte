@@ -77,6 +77,9 @@
       fill: var(--middle);
     }
   }
+  h3 {
+    color: var(--primary-light);
+  }
   .content {
     position: relative;
     width: 100%;

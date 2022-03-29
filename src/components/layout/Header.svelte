@@ -21,7 +21,7 @@
     max-width: 100vw;
     position: fixed;
     width: 100%;
-    background-color: var(--header);
+    background-color: var(--accent);
     color: var(--primary-light);
     z-index: 100;
   }
@@ -39,7 +39,7 @@
     flex-direction: row;
   }
   .home {
-    background-color: var(--header);
+    background-color: var(--accent);
     font-size: var(--l);
     z-index: 100;
   }
@@ -58,7 +58,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      background-color: var(--header);
+      background-color: var(--accent);
       transform: translateY(-128px);
       transition: var(--transition-time) ease-in-out;
       .links {
