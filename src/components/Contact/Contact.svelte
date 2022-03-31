@@ -47,10 +47,11 @@
       margin-bottom: 0.5rem;
     }
     label {
-      color: rgb(150, 150, 150);
+      color: var(--text-dark);
     }
     input,
     textarea {
+      background-color: var(--bg-light);
       box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 1em;
@@ -58,7 +59,7 @@
       width: 100%;
       resize: vertical;
       border-radius: 0.3em;
-      border-color: rgb(200, 200, 200);
+      border-color: var(--text-dark);
       border-image: none;
       border-style: solid;
       border-width: 1px;
@@ -75,15 +76,15 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.3em;
-      background-color: var(--dark);
-      color: white;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
       width: 100%;
       border: none;
       margin: auto;
       transition: 150ms;
       cursor: pointer;
       &:hover {
-        background-color: var(--darkest);
+        background-color: var(--bg-darkest);
       }
     }
   }

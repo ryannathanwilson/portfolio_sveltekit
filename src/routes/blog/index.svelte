@@ -47,7 +47,7 @@
     margin-bottom: var(--l);
   }
   h4 {
-    color: var(--accent);
+    color: var(--accent-text);
   }
   li {
     margin-bottom: var(--l);
@@ -56,6 +56,6 @@
   }
   .description {
     max-width: 40rem;
-    color: var(--middle);
+    color: var(--text-medium);
   }
 </style>

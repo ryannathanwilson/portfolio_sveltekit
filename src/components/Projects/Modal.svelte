@@ -54,11 +54,12 @@
     height: 600px;
     max-height: 90vh;
     margin: auto;
-    background: #fff;
     overflow: auto;
     outline: none;
     padding: 0;
     z-index: 10;
+    background-color: var(--bg-light);
+    /*border: 1px solid var(--text-dark);*/
     box-shadow: 0 0 4rem 2px var(--shadow);
     @media (max-width: 480px) {
       position: absolute;
@@ -76,7 +77,7 @@
     height: 2rem;
     width: 5.5rem;
     z-index: 10;
-    background-color: var(--lightest);
+    background-color: var(--bg-light);
     top: 0.3rem;
     right: 0.3rem;
     border-radius: 1rem;
@@ -85,7 +86,7 @@
     padding-left: 0.8rem;
     font-weight: 700;
     font-size: 0.8rem;
-    color: var(--dark);
+    color: var(--text-dark);
     box-shadow: 0 0 0.5rem 0 var(--shadow);
     cursor: pointer;
     &::before,
@@ -96,7 +97,7 @@
       width: 1rem;
       height: 0.2rem;
       right: 0.7rem;
-      background-color: var(--dark);
+      background-color: var(--bg-dark);
       border-radius: 0.1rem;
       transition: all 300ms ease;
     }
@@ -118,7 +119,6 @@
 
   img {
     width: 100%;
-    
   }
 
   .description {
@@ -147,7 +147,7 @@
     transition: background-color 200ms ease;
     &:hover {
       background-color: var(--accent2);
-      color: var(--lightest);
+      color: var(--text-light);
     }
   }
 </style>

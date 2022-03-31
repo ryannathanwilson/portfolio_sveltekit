@@ -48,11 +48,12 @@
       grid-template-rows: 1fr 1fr;
       grid-template-areas: 'top' 'bottom';
       position: absolute;
-      background-color: var(--primary-light);
-      top: -2%;
-      left: -2%;
-      right: -2%;
-      bottom: -2%;
+      background-color: var(--bg-light);
+      border: 1px solid var(--text-medium);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       opacity: 0;
       transition: var(--transition-time) ease-in;
 

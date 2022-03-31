@@ -16,7 +16,7 @@
       text-align: center;
     }
     a {
-      color: var(--accent);
+      color: var(--accent-text);
     }
   }
 </style>

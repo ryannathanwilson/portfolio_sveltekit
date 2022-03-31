@@ -41,7 +41,7 @@
     margin-bottom: var(--l);
   }
   .header h1 {
-    color: var(--dark);
+    color: var(--text-dark);
     text-align: left;
   }
   p,
@@ -49,10 +49,10 @@
     font-size: var(--m);
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--middle);
+    color: var(--text-medium);
   }
   .tags {
-    border: 2px solid var(--middle);
+    border: 2px solid var(--text-medium);
     border-radius: var(--radius);
     padding: 0.2rem 1rem;
   }

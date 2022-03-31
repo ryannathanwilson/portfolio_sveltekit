@@ -6,20 +6,35 @@ $tablet: 1000px;
 $desktop: 1300px;
 
 :root {
-  --primary-color: #0d0c1d;
-  --primary-light: #effffa;
-  --primary-hover: #343078;
+  // regular theme
+  --text-light: #fff;
+  --text-medium: #888;
+  --text-dark: #444;
+  --text-darkest: #000;
+  --bg-light: #fff;
+  --bg-medium: #888;
+  --bg-dark: #444;
+  --bg-darkest: #000;
+  --accent-text: #045b73;
+  --code: #ddd;
+  //dark
+  //--text-light: #fff;
+  //--text-medium: #aaa;
+  //--text-dark: #fff;
+  //--text-darkest: #fff;
+  //--bg-light: #000;
+  //--bg-medium: #888;
+  //--bg-dark: #444;
+  //--bg-darkest: #222;
+  //--code: #444;
+  //--accent-text: #fff;
+  // other colors
   --accent: #045b73;
   --accent2: #c35263;
-  --accent3: #00894e;
   --shadow: rgb(0 0 0 / 20%);
-  --code: rgb(230 230 230);
-  --light: rgb(173 110 110 / 70%);
-  --lightest: rgb(255 255 255);
-  --middle: rgb(150 150 150);
-  --dark: rgb(70 70 70);
-  --darkest: rgb(0 0 0);
-  --radius: 8px;
+  --header-text: #fff;
+  // sizing
+  --radius: 0;
   --transition-time: 200ms;
   --xl: 10rem;
   --l: 1.5rem;
@@ -36,6 +51,8 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 300;
   scroll-behavior: smooth;
+  background-color: var(--bg-light);
+  color: var(--text-darkest);
 }
 
 h1 {
@@ -52,13 +69,13 @@ h1 {
 h2 {
   text-transform: uppercase;
   font-size: var(--l);
-  color: var(--dark);
+  color: var(--text-dark);
 }
 
 h3 {
   text-transform: uppercase;
   font-size: var(--m);
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 p {

@@ -22,7 +22,7 @@
     position: fixed;
     width: 100%;
     background-color: var(--accent);
-    color: var(--primary-light);
+    color: var(--header-text);
     z-index: 100;
   }
   nav {
@@ -37,6 +37,7 @@
   .nav-links {
     display: flex;
     flex-direction: row;
+    color: var(--header-text);
   }
   .home {
     background-color: var(--accent);

@@ -28,6 +28,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--bg-dark);
+    opacity: 0.7;
   }
 </style>

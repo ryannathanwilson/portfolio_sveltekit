@@ -42,7 +42,7 @@
     left: -3rem;
     top: 0rem;
     font-size: 8rem;
-    color: var(--accent);
+    color: var(--accent-text);
   }
   p::after {
     content: close-quote;
@@ -50,7 +50,7 @@
     right: -3rem;
     bottom: -2rem;
     font-size: 8rem;
-    color: var(--accent);
+    color: var(--accent-text);
   }
   .card {
     display: flex;

@@ -12,7 +12,7 @@
   a,
   a:visited {
     position: relative;
-    color: var(--accent);
+    color: var(--accent-text);
   }
 
   p > code {
@@ -25,7 +25,7 @@
   a:hover,
   a:focus,
   a:active {
-    color: var(--accent);
+    color: var(--accent-text);
   }
 
   a::after {
@@ -113,7 +113,7 @@
   }
 
   body {
-    color: var(--darkest);
+    color: var(--text-darkest);
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
   }
@@ -140,7 +140,7 @@
   h3,
   h4,
   h5 {
-    color: var(--accent);
+    color: var(--accent-text);
   }
 
   blockquote {

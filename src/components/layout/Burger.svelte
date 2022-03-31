@@ -27,7 +27,7 @@
     div {
       width: 2rem;
       height: 4px;
-      background: var(--darkest);
+      background: var(--header-text);
       border-radius: 10px;
       transition: all 300ms ease;
       position: relative;

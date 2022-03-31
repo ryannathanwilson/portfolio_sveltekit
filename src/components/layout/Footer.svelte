@@ -71,21 +71,21 @@
     width: 100%;
     margin-bottom: -1px;
     #front {
-      fill: var(--dark);
+      fill: var(--bg-dark);
     }
     #back {
-      fill: var(--middle);
+      fill: var(--bg-medium);
     }
   }
   h3 {
-    color: var(--primary-light);
+    color: var(--text-light);
   }
   .content {
     position: relative;
     width: 100%;
-    background: var(--dark);
+    background: var(--bg-dark);
     margin: 0;
-    color: white;
+    color: var(--text-light);
     padding: 5rem 2rem;
   }
   a {
@@ -116,7 +116,7 @@
     }
     #tech {
       width: 220px;
-      border: 1px solid var(--primary-light);
+      border: 1px solid var(--text-light);
       border-radius: 0.5rem;
       padding: 0.5rem 1rem;
     }
