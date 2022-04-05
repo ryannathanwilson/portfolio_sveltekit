@@ -1,5 +1,9 @@
 <script>
-  export let mode = 'true';
+  import { mode } from '../../store';
+  let theme;
+  mode.subscribe((m) => {
+    theme = m;
+  });
   let imageSrcDark =
     'https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/portrait-bg-black.webp';
   let imageSrcLight =
@@ -8,7 +12,7 @@
 
 <div id="intro" class="section">
   <div class="image">
-    {#if mode}
+    {#if theme}
       <img src={imageSrcLight} alt="B/W profile of Ryan Nathan Wilson" />
     {:else}
       <img src={imageSrcDark} alt="B/W profile of Ryan Nathan Wilson" />
@@ -35,6 +39,7 @@
   .image {
     grid-area: 'left';
     overflow: hidden;
+    aspect-ratio: 0.75;
   }
   img {
     width: 100%;

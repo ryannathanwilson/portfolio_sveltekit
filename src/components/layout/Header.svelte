@@ -1,8 +1,18 @@
 <script lang="ts">
+  import Icon from '@iconify/svelte';
   import Burger from './Burger.svelte';
+  import { mode } from '../../store';
   export let isOpen: boolean = false;
   export let toggleMenu: () => void;
-  export let toggleMode: () => void;
+  let theme = true;
+
+  const toggleMode = () => {
+    mode.update((m) => !m);
+    theme = !theme;
+    theme
+      ? document.documentElement.classList.remove('theme-dark')
+      : document.documentElement.classList.add('theme-dark');
+  };
 </script>
 
 <div class="header">
@@ -12,7 +22,16 @@
       <div class="links"><a href="/#projects">Projects</a></div>
       <div class="links"><a href="/blog">Blog</a></div>
       <div class="links"><a href="/#contact">Contact</a></div>
-      <div class="links"><button on:click={toggleMode}>Mode</button></div>
+    </div>
+    <div class="mode">
+      <button on:click={toggleMode}>
+        Mode{' '}
+        {#if theme}
+          <Icon icon="ic:baseline-mode-night" />
+        {:else}
+          <Icon icon="ic:baseline-light-mode" />
+        {/if}
+      </button>
     </div>
     <Burger {isOpen} {toggleMenu} />
   </nav>
@@ -51,6 +70,14 @@
     margin-left: 3rem;
     text-transform: uppercase;
   }
+
+  .mode {
+    position: absolute;
+    padding: 0 0.5rem;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
   @media (max-width: 1000px) {
     nav {
       flex-direction: column;
@@ -68,6 +95,12 @@
         opacity: 0;
         transition: var(--transition-time) ease-in var(--transition-time);
       }
+    }
+    .mode {
+      padding: 0 0.5rem;
+      top: 0;
+      right: 4rem;
+      z-index: 100;
     }
     .open {
       .nav-links {

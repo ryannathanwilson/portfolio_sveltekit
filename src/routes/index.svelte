@@ -5,8 +5,6 @@
   import Contact from '$components/Contact';
   import { Modals, closeModal } from 'svelte-modals';
 
-  export let mode;
-
   const handleClose = () => {
     document.documentElement.style.overflow = 'scroll';
     closeModal();
@@ -14,7 +12,7 @@
 </script>
 
 <SEO />
-<Intro {mode} />
+<Intro />
 <Projects />
 <Contact />
 
