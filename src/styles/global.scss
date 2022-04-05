@@ -5,8 +5,19 @@ $mobile: 600px;
 $tablet: 1000px;
 $desktop: 1300px;
 
-:root {
-  // regular theme
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+  background-color: var(--bg-light);
+  color: var(--text-darkest);
+}
+
+html {
+  // default theme
   --text-light: #fff;
   --text-medium: #888;
   --text-dark: #444;
@@ -17,17 +28,6 @@ $desktop: 1300px;
   --bg-darkest: #000;
   --accent-text: #045b73;
   --code: #ddd;
-  //dark
-  //--text-light: #fff;
-  //--text-medium: #aaa;
-  //--text-dark: #fff;
-  //--text-darkest: #fff;
-  //--bg-light: #000;
-  //--bg-medium: #888;
-  //--bg-dark: #444;
-  //--bg-darkest: #222;
-  //--code: #444;
-  //--accent-text: #fff;
   // other colors
   --accent: #045b73;
   --accent2: #c35263;
@@ -44,15 +44,17 @@ $desktop: 1300px;
   --xxs: 0.25rem;
 }
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  scroll-behavior: smooth;
-  background-color: var(--bg-light);
-  color: var(--text-darkest);
+.theme-dark {
+  --text-light: #fff;
+  --text-medium: #aaa;
+  --text-dark: #fff;
+  --text-darkest: #fff;
+  --bg-light: #000;
+  --bg-medium: #888;
+  --bg-dark: #444;
+  --bg-darkest: #222;
+  --code: #444;
+  --accent-text: #fff;
 }
 
 h1 {

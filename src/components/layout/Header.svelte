@@ -2,6 +2,7 @@
   import Burger from './Burger.svelte';
   export let isOpen: boolean = false;
   export let toggleMenu: () => void;
+  export let toggleMode: () => void;
 </script>
 
 <div class="header">
@@ -11,6 +12,7 @@
       <div class="links"><a href="/#projects">Projects</a></div>
       <div class="links"><a href="/blog">Blog</a></div>
       <div class="links"><a href="/#contact">Contact</a></div>
+      <div class="links"><button on:click={toggleMode}>Mode</button></div>
     </div>
     <Burger {isOpen} {toggleMenu} />
   </nav>

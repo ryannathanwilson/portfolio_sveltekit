@@ -1,12 +1,18 @@
 <script>
+  export let mode = 'true';
+  let imageSrcDark =
+    'https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/portrait-bg-black.webp';
+  let imageSrcLight =
+    'https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/portrait-bg-white.webp';
 </script>
 
 <div id="intro" class="section">
   <div class="image">
-    <img
-      src="https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/profile_BW.webp"
-      alt="B/W profile of Ryan Nathan Wilson"
-    />
+    {#if mode}
+      <img src={imageSrcLight} alt="B/W profile of Ryan Nathan Wilson" />
+    {:else}
+      <img src={imageSrcDark} alt="B/W profile of Ryan Nathan Wilson" />
+    {/if}
   </div>
   <div class="intro-text">
     <p>
