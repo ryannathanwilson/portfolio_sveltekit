@@ -4,6 +4,7 @@
   import { theme as storeTheme } from '../../store';
   export let isOpen: boolean = false;
   export let toggleMenu: () => void;
+  export let closeMenu: () => void;
   let theme;
   storeTheme.subscribe((t) => {
     theme = t;
@@ -27,9 +28,9 @@
   <nav class="wrapper" class:open={isOpen}>
     <div class="home"><a href="/">RyanNathan</a></div>
     <div class="nav-links">
-      <div class="links"><a href="/#projects">Projects</a></div>
-      <div class="links"><a href="/blog">Blog</a></div>
-      <div class="links"><a href="/#contact">Contact</a></div>
+      <div class="links"><a href="/#projects" on:click={closeMenu}>Projects</a></div>
+      <div class="links"><a href="/blog" on:click={closeMenu}>Blog</a></div>
+      <div class="links"><a href="/#contact" on:click={closeMenu}>Contact</a></div>
     </div>
     <div class="mode">
       <button on:click={toggleMode}>
