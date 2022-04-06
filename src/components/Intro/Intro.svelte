@@ -1,8 +1,8 @@
 <script>
-  import { mode } from '../../store';
+  import { theme as storeTheme } from '../../store';
   let theme;
-  mode.subscribe((m) => {
-    theme = m;
+  storeTheme.subscribe((t) => {
+    theme = t;
   });
   let imageSrcDark =
     'https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/portrait-bg-black.webp';
@@ -12,7 +12,7 @@
 
 <div id="intro" class="section">
   <div class="image">
-    {#if theme}
+    {#if theme === 'theme-light'}
       <img src={imageSrcLight} alt="B/W profile of Ryan Nathan Wilson" />
     {:else}
       <img src={imageSrcDark} alt="B/W profile of Ryan Nathan Wilson" />

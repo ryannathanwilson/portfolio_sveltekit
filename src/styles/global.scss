@@ -12,11 +12,9 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 300;
   scroll-behavior: smooth;
-  background-color: var(--bg-light);
-  color: var(--text-darkest);
 }
 
-html {
+main {
   // default theme
   --text-light: #fff;
   --text-medium: #888;
@@ -42,6 +40,8 @@ html {
   --s: 0.7rem;
   --xs: 0.5rem;
   --xxs: 0.25rem;
+  background-color: var(--bg-light);
+  color: var(--text-darkest);
 }
 
 .theme-dark {

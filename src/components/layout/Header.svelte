@@ -1,17 +1,25 @@
 <script lang="ts">
   import Icon from '@iconify/svelte';
   import Burger from './Burger.svelte';
-  import { mode } from '../../store';
+  import { theme as storeTheme } from '../../store';
   export let isOpen: boolean = false;
   export let toggleMenu: () => void;
-  let theme = true;
+  let theme;
+  storeTheme.subscribe((t) => {
+    theme = t;
+  });
 
   const toggleMode = () => {
-    mode.update((m) => !m);
-    theme = !theme;
-    theme
-      ? document.documentElement.classList.remove('theme-dark')
-      : document.documentElement.classList.add('theme-dark');
+    if (theme === 'theme-light') {
+      storeTheme.update(() => 'theme-dark');
+      /*document.documentElement.classList.add('theme-dark');*/
+    } else if (theme === 'theme-dark') {
+      storeTheme.update(() => 'theme-light');
+      /*document.documentElement.classList.remove('theme-dark');*/
+    } else {
+      storeTheme.update(() => 'theme-dark');
+      console.log('Theming error');
+    }
   };
 </script>
 
