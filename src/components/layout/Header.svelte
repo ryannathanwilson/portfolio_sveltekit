@@ -26,7 +26,7 @@
 
 <div class="header">
   <nav class="wrapper" class:open={isOpen}>
-    <div class="home"><a href="/">RyanNathan</a></div>
+    <div class="home"><a href="/" on:click={closeMenu}>RyanNathan</a></div>
     <div class="nav-links">
       <div class="links"><a href="/#projects" on:click={closeMenu}>Projects</a></div>
       <div class="links"><a href="/blog" on:click={closeMenu}>Blog</a></div>
