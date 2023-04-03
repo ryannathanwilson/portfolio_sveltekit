@@ -1,0 +1,127 @@
+@import './reset';
+@import './fonts.css';
+
+$mobile: 600px;
+$tablet: 1000px;
+$desktop: 1300px;
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+main {
+  // default theme
+  --text-light: #fff;
+  --text-medium: #888;
+  --text-dark: #444;
+  --text-darkest: #000;
+  --bg-light: #fff;
+  --bg-medium: #888;
+  --bg-dark: #444;
+  --bg-darkest: #000;
+  --accent-text: #045b73;
+  --code: #ddd;
+  // other colors
+  --accent: #045b73;
+  --accent2: #c35263;
+  --shadow: rgb(0 0 0 / 20%);
+  --header-text: #fff;
+  // sizing
+  --radius: 0;
+  --transition-time: 200ms;
+  --xl: 10rem;
+  --l: 1.5rem;
+  --m: 1rem;
+  --s: 0.7rem;
+  --xs: 0.5rem;
+  --xxs: 0.25rem;
+  background-color: var(--bg-light);
+  color: var(--text-darkest);
+}
+
+.theme-dark {
+  --text-light: #fff;
+  --text-medium: #aaa;
+  --text-dark: #fff;
+  --text-darkest: #fff;
+  --bg-light: #000;
+  --bg-medium: #888;
+  --bg-dark: #444;
+  --bg-darkest: #222;
+  --code: #444;
+  --accent-text: #fff;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--xl);
+  font-weight: 700;
+  line-height: var(--xl);
+  letter-spacing: 1rem;
+  color: var(--accent2);
+  margin: auto;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: var(--l);
+  color: var(--text-dark);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: var(--m);
+  color: var(--accent-text);
+}
+
+p {
+  text-align: left;
+  font-size: var(--m);
+}
+
+pre {
+  border-radius: 0.5rem;
+}
+
+code {
+  font-size: var(--s);
+  line-height: 1.3rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+
+svg {
+  transform: scale(1.1) translateY(10%);
+}
+
+.wrapper {
+  max-width: $desktop;
+  padding: 0 2rem;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.section {
+  padding-top: 4rem;
+  margin-bottom: 10rem;
+
+  @media (max-width: var(--tablet)) {
+    padding-top: 17rem;
+  }
+}
+
+@media (max-width: $tablet) {
+  main {
+    --xl: 3rem;
+  }
+
+  h1 {
+    letter-spacing: var(--xs);
+  }
+}
