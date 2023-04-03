@@ -2,7 +2,7 @@
 	import '$styles/global.scss';
 	import Header from '$src/lib/components/layout/Header.svelte';
 	import Footer from '$src/lib/components/layout/Footer.svelte';
-	// import { theme as storeTheme } from '../store';
+	import { theme as storeTheme } from '../store';
 
 	let isOpen = false;
 	const toggleMenu = () => {
@@ -11,10 +11,10 @@
 	const closeMenu = () => {
 		isOpen = false;
 	};
-	// $: currentTheme = $storeTheme;
+	$: currentTheme = $storeTheme;
 </script>
 
-<main class="theme-light">
+<main class={currentTheme}>
 	<Header {toggleMenu} {closeMenu} {isOpen} />
 	<div class="wrapper" class:open={isOpen}>
 		<slot />

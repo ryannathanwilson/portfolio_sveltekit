@@ -1,10 +1,9 @@
-<script>
-	// import { theme as storeTheme } from '../../store';
-	// let theme;
-	// storeTheme.subscribe((t) => {
-	//   theme = t;
-	// });
-	let theme = 'theme-light';
+<script lang="ts">
+	import { theme as storeTheme } from '$src/store';
+	let theme: App.Theme = 'theme-light';
+	storeTheme.subscribe((t) => {
+		theme = t;
+	});
 	let imageSrcDark =
 		'https://res.cloudinary.com/ryannathanwilson/image/upload/c_scale,w_1200/v1648230361/rnw/portrait-bg-black.webp';
 	let imageSrcLight =

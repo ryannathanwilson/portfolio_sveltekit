@@ -6,6 +6,7 @@ declare global {
     // interface Locals {}
     // interface PageData {}
     // interface Platform {}
+    type Theme = 'theme-light' | 'theme-dark';
     interface MetaData {
       author: string | undefined;
       title: string;

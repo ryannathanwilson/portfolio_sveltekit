@@ -1,26 +1,26 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import Burger from './Burger.svelte';
-	// import { theme as storeTheme } from '../../store';
-	export let isOpen: boolean = false;
+	import { theme as storeTheme } from '$src/store';
+	export let isOpen = false;
 	export let toggleMenu: () => void;
 	export let closeMenu: () => void;
 	let theme = 'theme-light';
-	// storeTheme.subscribe((t) => {
-	//   theme = t;
-	// });
+	storeTheme.subscribe((t) => {
+		theme = t;
+	});
 
 	const toggleMode = () => {
-		// if (theme === 'theme-light') {
-		//   storeTheme.update(() => 'theme-dark');
-		//   /*document.documentElement.classList.add('theme-dark');*/
-		// } else if (theme === 'theme-dark') {
-		//   storeTheme.update(() => 'theme-light');
-		//   /*document.documentElement.classList.remove('theme-dark');*/
-		// } else {
-		//   storeTheme.update(() => 'theme-dark');
-		//   console.log('Theming error');
-		// }
+		if (theme === 'theme-light') {
+			storeTheme.update(() => 'theme-dark');
+			/*document.documentElement.classList.add('theme-dark');*/
+		} else if (theme === 'theme-dark') {
+			storeTheme.update(() => 'theme-light');
+			/*document.documentElement.classList.remove('theme-dark');*/
+		} else {
+			storeTheme.update(() => 'theme-dark');
+			console.log('Theming error');
+		}
 	};
 </script>
 
@@ -35,7 +35,7 @@
 		<div class="mode">
 			<button on:click={toggleMode}>
 				Mode{' '}
-				{#if theme}
+				{#if theme === 'theme-light'}
 					<Icon icon="ic:baseline-mode-night" />
 				{:else}
 					<Icon icon="ic:baseline-light-mode" />
