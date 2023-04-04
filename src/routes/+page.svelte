@@ -1,7 +1,7 @@
 <script>
 	import SEO from '$src/lib/components/SEO/index.svelte';
 	import Intro from '$src/lib/components/Intro';
-	import Projects from '$src/lib/components/Projects';
+import Projects from '$src/lib/components/Projects';
 	import Contact from '$src/lib/components/Contact';
 	import { Modals, closeModal } from 'svelte-modals';
 
