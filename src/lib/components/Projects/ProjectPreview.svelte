@@ -7,14 +7,12 @@
 	export let project: ProjectInterface;
 
 	function handleClick() {
-		// RNW TODO: handle keydown
 		openModal(Modal, { project });
 		document.documentElement.style.overflow = 'hidden';
-		console.log('test');
 	}
 </script>
 
-<div class="container" role="button" on:click={handleClick} on:keydown={handleClick}>
+<div class="container" tabindex="0" role="button" on:click={handleClick} on:keydown={handleClick}>
 	<img src={project.imageSquare} alt={project.title} />
 
 	<div class="cover">

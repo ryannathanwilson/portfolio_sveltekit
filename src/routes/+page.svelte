@@ -18,12 +18,12 @@ import Projects from '$src/lib/components/Projects';
 
 <Modals>
 	<div
+    tabindex="0"
+    role="button"
 		slot="backdrop"
 		class="backdrop"
 		on:click={handleClose}
-		on:keydown={() => {
-			console.log('...');
-		}}
+		on:keydown={handleClose}
 	/>
 </Modals>
 

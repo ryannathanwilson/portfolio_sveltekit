@@ -2,7 +2,7 @@
   import ProjectPreview from './ProjectPreview.svelte';
   import Highlight from './Highlight.svelte';
   import projectsJSON from './projects.json';
-  import type { ProjectInterface } from 'src/types';
+  import type { ProjectInterface } from '$src/types';
 
   let projects = projectsJSON as ProjectInterface[];
 </script>
